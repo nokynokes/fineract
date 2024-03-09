@@ -126,7 +126,7 @@ public class SavingsAccountsTest extends IntegrationTest {
 
         assertThat(postSavingsResponse.isSuccessful()).isTrue();
 
-        LOG.info("--------------- GET ALL SAVINGS ACCOUNTS BY BIRHDAY:" + birthDayQueryParam + " ---------------");
+        LOG.info("--------------- GET ALL SAVINGS ACCOUNTS BY BIRTHDAY:" + birthDayQueryParam + " ---------------");
         Response<GetSavingsAccountsResponse> getSavingsResponse = okR(
                 fineract().savingsAccounts.retrieveAll33(
                         null,
